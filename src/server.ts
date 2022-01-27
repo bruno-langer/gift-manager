@@ -13,7 +13,8 @@ import { guests } from './routes/guests';
 import { gifts } from './routes/gifts';
 
 // Constant values definition
-const PORT = 80;
+import endpoint from './endpoints.config';
+
 
 // Code
 const server = express();
@@ -28,5 +29,5 @@ server.use('/guests', guests);
 server.use('/gifts', gifts);
 
 
-http.listen(PORT);
-log(`Server available at port ${PORT}`, 'server_main');
+http.listen(endpoint.serverPort);
+log(`Server available at port ${endpoint.serverPort}`, 'server_main');
