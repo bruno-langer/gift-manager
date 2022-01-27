@@ -9,9 +9,8 @@ import { requestLogger } from './assets/expressRequestLogger';
 
 // Routes
 import { root } from './routes/root';
-import { users } from './routes/users';
-import { movies } from './routes/movies';
-import { comments } from './routes/comments';
+import { guests } from './routes/guests';
+import { gifts } from './routes/gifts';
 
 // Constant values definition
 const PORT = 80;
@@ -25,9 +24,8 @@ server.use(json());
 server.use(requestLogger)
 
 server.use('/', root);
-server.use('/users', users);
-server.use('/movies', movies);
-server.use('/comments', comments);
+server.use('/guests', guests);
+server.use('/gifts', gifts);
 
 
 http.listen(PORT);

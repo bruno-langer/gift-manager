@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import { ObjectId } from 'mongoose';
-import { Movie } from '../models/user';
+import { Movie } from '../models/Guest';
 
 interface TmdbMovieData {
     adult?: boolean
