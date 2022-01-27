@@ -1,0 +1,25 @@
+{
+    "tables": {
+        "gifts": {
+            "id": 1,
+            "shortName": "Cafeteira",
+            "longName": "Cafeteira 220V Britania Super Ultra",
+            "description": "Basta ligar ela na tomada, colocar o filtro de papel, a água e o pó de café nos espaços certos da máquina, apertar um botão e esperar que ela faça um delicioso café quentinho. Além disso, ela possui capacidade para 15 xícaras, filtro permanente, porta filtro removível, sistema corta pingo, reservatório de água e placa aquecedora para manter seu café quentinho, mesmo após o preparo",
+            "models": [
+                {
+                    "url": "https://www.magazineluiza.com.br/cafeteira-eletrica-britania-cp15-15-cafes-preto/p/023511600/ep/ceac/",
+                    "siteName": "Magazine Luiza",
+                    "value": "105.99"
+                }
+            ],
+            "selected": false
+        },
+        "people": {
+            "name":"Bruno Langer",
+            "phone":"047996614227",
+            "email":"brunojoselanger@gmail.com",
+            "giftId":1,
+            "type":"money"
+        }
+    }
+}

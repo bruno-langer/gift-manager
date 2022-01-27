@@ -1,10 +1,10 @@
 // Libraries
 import { connect, connection } from 'mongoose';
-import { mongoUrl } from './auth';
+import endpoint from './endpoints.config';
 import { error, log } from './assets/logger';
 
 // Code
-connect(mongoUrl);
+connect(endpoint.mongoUrl);
 
 connection.on('error', err => error(err, 'database_connection'));
 connection.on('connecting', () => log('Connecting to the database', 'database_connection'));
